@@ -50,7 +50,7 @@ def main():
 
     for line in lines:
         if args.tokenize:
-            t = tokenizer.tokenize(line)
+            t = tokenizer.tokenize(line, escape=False)
         else:
             t = line.split()
         all_tokens.append(t)

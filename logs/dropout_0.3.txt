@@ -1,0 +1,2 @@
+| end of epoch   1 | time: 112.44s | valid loss  4.83 | valid ppl   125.27
+| End of training | test loss  4.77 | test ppl   117.78
