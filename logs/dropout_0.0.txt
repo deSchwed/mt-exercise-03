@@ -1,0 +1,9 @@
+| end of epoch   1 | time: 107.76s | valid loss  4.78 | valid ppl   119.15
+| end of epoch   2 | time: 107.33s | valid loss  4.57 | valid ppl    96.19
+| end of epoch   3 | time: 108.09s | valid loss  4.51 | valid ppl    91.23
+| end of epoch   4 | time: 107.95s | valid loss  4.52 | valid ppl    92.19
+| end of epoch   5 | time: 107.42s | valid loss  4.50 | valid ppl    89.69
+| end of epoch   6 | time: 109.15s | valid loss  4.55 | valid ppl    94.22
+| end of epoch   7 | time: 107.79s | valid loss  4.56 | valid ppl    95.82
+| end of epoch   8 | time: 107.74s | valid loss  4.56 | valid ppl    95.24
+| End of training | test loss  4.42 | test ppl    83.17
