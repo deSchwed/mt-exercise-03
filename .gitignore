@@ -4,3 +4,4 @@ tools
 data
 models
 models_archive
+scripts/train.sh
