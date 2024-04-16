@@ -7,9 +7,10 @@ Based off of the [original repo](https://github.com/siri-web/mt-exercise-03), th
 - Added a new script `convert_csv.py` to convert two csv files from the chosen dataset into a single text file.
 - Added a new script `preprocess_data.sh` to preprocess the data and split it into training, validation, and test sets. (Based off of the original `download_data.sh`)
 - Added a new script `train_all.sh` to train several models with different hyperparameters. **Uses CUDA**
-- Changed `install_packages.sh` to install additional packages used in the new scripts.
+- Changed `install_packages.sh` to install additional packages (pandas and matplotlib) used in the new/changed scripts.
 - Changed `preproces.py` to not escape XML unfriendly characters.
 - Changed the `main.py` script from the pytorch example to save the logs to a log file in the `logs` directory.
+- Changed the `generate.sh` script to dynamically change the output file name based on the model being used and existing samples from that model.
 
 # Usage
 First create the virtual environment and install the required packages with the scripts provided from the original repo. Rename `PLACE_IN_PYTORCH_FOLDER_main.py` to `main.py` and replace the script from the `word_language_model` folder inside `tools/pytorch-examples`.
@@ -23,6 +24,8 @@ python -m ./scripts/convert_csv.py
 ./scripts/preprocess_data.sh
 ./scripts/train_all.sh
 ```
+
+Generate samples from the trained models with the `generate.sh` script, make sure to specify the model you want to generate samples from inside the script.
 
 Lastly, run the following command to create a table and a line graph of the perplexity scores from the log-files found in `logs`:
 ```bash

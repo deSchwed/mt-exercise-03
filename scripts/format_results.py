@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Define path to logs directory
-log_dir = '../logs'
+log_dir = './logs'
 
 # Initialize empty DataFrame
 all_data = pd.DataFrame()
@@ -38,10 +38,10 @@ for filename in os.listdir(log_dir):
 
 # Pivot the DataFrame for easier plotting
 pivot_df = all_data.pivot(
-    index='Epoch', columns='Dropout', values='Perplexities')
+    index='Epoch', columns='Dropout', values='Perplexity')
 
 # Save the DataFrame in a table-like format
-pivot_df.to_csv('../plots/output_table.txt', sep='\t', index=True, header=True)
+pivot_df.to_csv('plots/output_table.txt', sep='\t', index=True, header=True)
 
 # Plotting
 plt.figure(figsize=(10, 6))
@@ -53,4 +53,4 @@ plt.xlabel('Epoch')
 plt.ylabel('Perplexity')
 plt.legend(title='Dropout')
 plt.grid(True)
-plt.savefig('../plots/preplexity_plot.png', dpi=500, bbox_inches='tight')
+plt.savefig('plots/preplexity_plot.png', dpi=500, bbox_inches='tight')
