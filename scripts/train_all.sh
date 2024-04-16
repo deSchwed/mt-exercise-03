@@ -11,7 +11,7 @@ mkdir -p "$models"
 
 num_threads=4
 device="0"
-dropout_values=("0" "0.3" "0.5" "0.6" "0.75")
+dropout_values=("0" "0.3" "0.5")
 
 # Time tracking
 SECONDS=0

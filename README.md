@@ -24,5 +24,12 @@ python -m ./scripts/convert_csv.py
 ./scripts/train_all.sh
 ```
 
+Lastly, run the following command to create a table and a line graph of the perplexity scores from the log-files found in `logs`:
+```bash
+python ./scripts/format_results.py
+```
+
+You will find a tabular representation of the results in `plots/output_table.txt` and a line graph in `plots/perplexity_plot.png`.
+
 # Notes on Usage
 With the current setup, running `train_all.sh` and training all models will take a **very** long time on a CPU. It took me around 1 hour per model on my machine, which has an RTX 4080 GPU, and 128 GB of RAM.
