@@ -22,7 +22,7 @@ random_seed=$RANDOM
 (cd "$tools"/pytorch-examples/word_language_model &&
     CUDA_VISIBLE_DEVICES=$device OMP_NUM_THREADS=$num_threads python generate.py \
         --data "$data"/mal_dataset \
-        --words 100 \
+        --words 200 \
         --seed $random_seed \
         --checkpoint "$models"/"$model_name".pt \
         --outf "$samples"/sample \
