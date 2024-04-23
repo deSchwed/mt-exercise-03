@@ -5,3 +5,4 @@ data
 models
 models_archive
 scripts/train.sh
+model_variations.zip
