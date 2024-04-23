@@ -9,17 +9,21 @@ tools=$base/tools
 samples=$base/samples
 
 # Change this to the specific version of the model you want to generate with
-model_name="model_0.3"
+model_name="model_0.5"
 
 mkdir -p "$samples"
 
 num_threads=4
 device="0"
 
+# Generate a random seed number
+random_seed=$RANDOM
+
 (cd "$tools"/pytorch-examples/word_language_model &&
     CUDA_VISIBLE_DEVICES=$device OMP_NUM_THREADS=$num_threads python generate.py \
         --data "$data"/mal_dataset \
         --words 100 \
+        --seed $random_seed \
         --checkpoint "$models"/"$model_name".pt \
         --outf "$samples"/sample \
         --cuda

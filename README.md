@@ -11,6 +11,7 @@ Based off of the [original repo](https://github.com/siri-web/mt-exercise-03), th
 - Changed `preproces.py` to not escape XML unfriendly characters.
 - Changed the `main.py` script from the pytorch example to save the logs to a log file in the `logs` directory.
 - Changed the `generate.sh` script to dynamically change the output file name based on the model being used and existing samples from that model.
+- Changed the `generate.sh` script to use a random seed when generating samples.
 
 # Usage
 First create the virtual environment and install the required packages with the scripts provided from the original repo. Rename `PLACE_IN_PYTORCH_FOLDER_main.py` to `main.py` and replace the script from the `word_language_model` folder inside `tools/pytorch-examples`.
